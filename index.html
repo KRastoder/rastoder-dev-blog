@@ -3,105 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rastoder Dev Blog | Test Page</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    body {
-      background-color: #0f172a;
-      color: #f8fafc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 40px;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
-
-    .status-pill {
-      display: inline-block;
-      background: rgba(34, 197, 94, 0.15);
-      color: #4ade80;
-      padding: 6px 14px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      border: 1px solid rgba(34, 197, 94, 0.3);
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: #ffffff;
-    }
-
-    p {
-      color: #94a3b8;
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #3b82f6;
-      color: #ffffff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.2s ease, transform 0.1s ease;
-    }
-
-    .btn:hover {
-      background-color: #2563eb;
-      transform: translateY(-2px);
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.8rem;
-      color: #64748b;
-    }
-
-    footer a {
-      color: #94a3b8;
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="description" content="Kenan Rastoder - personal site and dev blog. Networking, code, and notes.">
+  <title>Kenan Rastoder :: Home</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
-  <div class="card">
-    <span class="status-pill">● Deployment Test</span>
-    <h1>Rastoder Dev Blog</h1>
-    <p>If you see this dark mode card with styled buttons, your GitHub Pages setup and deployment pipeline are working properly!</p>
-    
-    <a href="https://github.com/KRastoder/rastoder-dev-blog" target="_blank" class="btn">View GitHub Repo</a>
+  <header id="masthead">
+    <a class="brand" href="/">
+      <h1>Kenan Rastoder</h1>
+      <p class="tagline">~ my little corner of the World Wide Web ~</p>
+    </a>
+    <nav id="nav">
+      <a class="active" href="/">Home</a>
+      <a href="/networking/">Networking</a>
+    </nav>
+  </header>
 
-    <footer>
-      © 2026 Kenan Rastoder • Open source under the 
-      <a href="./LICENSE" target="_blank">MIT License</a>
+  <div class="marquee">
+    <span>&#9733; Welcome to my homepage! &#9733; New: my Networking notes are online &#9733; Come back soon, Day Two is on the way &#9733; Sign the guestbook? &#9733;</span>
+  </div>
+
+  <div class="wrap">
+
+    <div class="panel">
+      <p class="ptitle">&#9873; Welcome!</p>
+      <div class="hero">
+        <div class="avatar">KR</div>
+        <p>
+          Hey, I'm <strong>Kenan Rastoder</strong> &mdash; a developer who likes to learn things
+          from the ground up. Right now I'm deep in <strong>network programming</strong>,
+          reading Beej's Guide and writing sockets in C.
+        </p>
+        <p>
+          This site is where I keep my notes as I go. It's hand-coded with
+          <span class="blink">HTML + CSS</span> and zero JavaScript, just like the good old days.
+        </p>
+        <a class="btn" href="/networking/">&#9654; Read the Networking notes</a>
+        <a class="btn" href="https://github.com/KRastoder/rastoder-dev-blog" target="_blank" rel="noopener">&#9654; Source on GitHub</a>
+      </div>
+    </div>
+
+    <div class="cols">
+
+      <div class="main">
+        <div class="panel">
+          <p class="ptitle">&#9998; Latest Updates</p>
+          <div class="body">
+            <div class="update">
+              <span class="date">Day One &mdash; Now Live</span>
+              <strong>Beej's Guide to Network Programming</strong> &mdash; sockets, TCP vs UDP,
+              and the 7-layer OSI model. I wrote it all up with the first socket code I compiled.
+              <a href="/networking/dayone/">Read it &raquo;</a>
+            </div>
+            <div class="update">
+              <span class="date">Soon</span>
+              <strong>Day Two</strong> &mdash; more socket calls and the first client/server pair.
+              Check back later!
+            </div>
+            <div class="update">
+              <span class="date">Site</span>
+              <strong>New look!</strong> I gave the whole site a fresh coat of 2007 paint.
+              Let me know what you think.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="panel">
+          <p class="ptitle">&#9758; Navigation</p>
+          <div class="body">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/networking/">Networking</a></li>
+              <li><a href="/networking/dayone/">Networking: Day One</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer id="footer">
+      <hr class="retro">
+      <div class="badges">
+        <span class="badge">1024 x 768</span>
+        <span class="badge">Made with Notepad</span>
+        <span class="badge">Valid HTML</span>
+        <span class="badge">Powered by GitHub Pages</span>
+      </div>
+      <p>&copy; 2026 Kenan Rastoder &bull; Open source under the <a href="/LICENSE" target="_blank" rel="noopener">MIT License</a></p>
+      <p>This page is a loving tribute to the Web 2.0 era. No JavaScript was harmed.</p>
     </footer>
+
   </div>
 
 </body>

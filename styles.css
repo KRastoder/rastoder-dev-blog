@@ -1,0 +1,438 @@
+/* ============================================================
+   Kenan Rastoder - personal site
+   "Webcore" theme - best viewed in 2007 ;)
+   Pure CSS, no JavaScript.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 40px;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #16204a;
+  background-color: #0a0f2c;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1px 1px at 120px 80px, #cfe0ff, transparent),
+    radial-gradient(1px 1px at 200px 20px, #ffffff, transparent),
+    radial-gradient(2px 2px at 260px 140px, #9ec1ff, transparent),
+    radial-gradient(1px 1px at 40px 160px, #ffffff, transparent),
+    repeating-linear-gradient(45deg, #0a0f2c 0px, #0a0f2c 18px, #0c1338 18px, #0c1338 36px);
+  background-size: 300px 200px, 300px 200px, 300px 200px, 300px 200px, 300px 200px, auto;
+}
+
+a {
+  color: #0033cc;
+}
+
+a:visited {
+  color: #660099;
+}
+
+a:hover {
+  color: #ff3300;
+  background: #ffff99;
+}
+
+/* ---------- Page shell ---------- */
+
+.wrap {
+  width: 90%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* ---------- Header banner ---------- */
+
+#masthead {
+  background: #1a2c8f;
+  background-image: linear-gradient(
+    to bottom,
+    #6f8bff 0%,
+    #2a44c8 8%,
+    #16279e 45%,
+    #0b1668 50%,
+    #1b2fa5 51%,
+    #2540c4 92%,
+    #4d6bff 100%
+  );
+  border-bottom: 3px solid #ffcc00;
+  border-top: 1px solid #aebdff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.55);
+  padding: 18px 0 0;
+}
+
+#masthead .brand {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 10px 2px;
+}
+
+#masthead .brand:hover {
+  background: transparent;
+}
+
+#masthead h1 {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, Arial Black, sans-serif;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 2px 0 #000a4d, 2px 2px 6px #000000;
+}
+
+#masthead .tagline {
+  margin: 2px 0 12px;
+  font-size: 12px;
+  font-style: italic;
+  color: #ffe680;
+  text-shadow: 1px 1px 0 #000a4d;
+}
+
+/* ---------- Navigation (glossy beveled buttons) ---------- */
+
+#nav {
+  text-align: center;
+  padding: 0 0 10px;
+}
+
+#nav a {
+  display: inline-block;
+  margin: 3px 4px;
+  padding: 6px 18px 7px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #003399;
+  border: 1px solid #0a1470;
+  border-radius: 9px;
+  background: #2456d6;
+  background-image: linear-gradient(
+    to bottom,
+    #b7ccff 0%,
+    #5f83ee 48%,
+    #2f57d0 50%,
+    #1c3ba8 100%
+  );
+  box-shadow: inset 0 1px 0 #ffffff, 0 2px 3px rgba(0, 0, 0, 0.45);
+}
+
+#nav a:hover {
+  color: #fffbe0;
+  background-image: linear-gradient(
+    to bottom,
+    #fff3b0 0%,
+    #ffcf33 48%,
+    #f5a800 50%,
+    #cc7a00 100%
+  );
+  text-shadow: 1px 1px 0 #7a4a00;
+}
+
+#nav a.active,
+#nav a:active {
+  background-image: linear-gradient(
+    to bottom,
+    #6f8bff 0%,
+    #16279e 50%,
+    #0b1668 100%
+  );
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Marquee ticker ---------- */
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000000;
+  border: 1px solid #ffcc00;
+  border-width: 2px 0;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 0;
+  margin: 0 0 18px;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 18s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- Content panel ---------- */
+
+.panel {
+  background: #ffffff;
+  border: 3px double #2456d6;
+  box-shadow: 4px 4px 0 #ffcc00, 0 0 0 1px #0a1470 inset;
+  margin: 0 0 20px;
+  padding: 0 0 16px;
+}
+
+.panel > .ptitle {
+  margin: 0 0 12px;
+  padding: 7px 12px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #003399;
+  border-bottom: 2px solid #ffcc00;
+  background: #2456d6;
+  background-image: linear-gradient(
+    to bottom,
+    #8ea7ff 0%,
+    #2f57d0 48%,
+    #16279e 100%
+  );
+}
+
+.panel .body {
+  padding: 0 16px;
+}
+
+.panel h2 {
+  margin: 14px 0 6px;
+  font-size: 15px;
+  color: #16279e;
+  border-bottom: 1px dotted #8ea7ff;
+  padding-bottom: 3px;
+}
+
+.panel h3 {
+  margin: 12px 0 4px;
+  font-size: 13px;
+  color: #b34700;
+}
+
+.panel p {
+  margin: 8px 0;
+}
+
+.panel ul,
+.panel ol {
+  margin: 8px 0;
+  padding-left: 26px;
+}
+
+.panel li {
+  margin: 4px 0;
+}
+
+/* ---------- Home page bits ---------- */
+
+.hero {
+  text-align: center;
+  padding: 6px 16px 14px;
+}
+
+.hero .avatar {
+  width: 92px;
+  height: 92px;
+  margin: 4px auto 10px;
+  border: 3px double #2456d6;
+  border-radius: 50%;
+  background: #ffcc00;
+  background-image: radial-gradient(circle at 50% 35%, #fff3b0, #f5a800 70%, #b34700);
+  color: #16279e;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 92px;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+
+.blink {
+  color: #ff0000;
+  font-weight: bold;
+  animation: blink 1s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------- Buttons / badges ---------- */
+
+.btn {
+  display: inline-block;
+  margin: 4px 6px 4px 0;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #103000;
+  text-shadow: 1px 1px 0 #d9ffb0;
+  border: 1px solid #2f6b00;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to bottom,
+    #e9ffc7 0%,
+    #8fe03c 48%,
+    #4fb000 50%,
+    #2f7a00 100%
+  );
+  box-shadow: inset 0 1px 0 #ffffff, 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #7a4a00;
+  background-image: linear-gradient(
+    to bottom,
+    #fff3b0 0%,
+    #ffcf33 48%,
+    #f5a800 50%,
+    #cc7a00 100%
+  );
+}
+
+/* ---------- Code box ---------- */
+
+.codebox {
+  margin: 10px 0;
+  border: 1px solid #0a1470;
+  background: #f4f7ff;
+  box-shadow: 3px 3px 0 #ffcc00;
+}
+
+.codebox .filename {
+  padding: 3px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #16279e;
+  border-bottom: 1px solid #0a1470;
+}
+
+.codebox pre {
+  margin: 0;
+  padding: 10px 12px;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #003300;
+  background: #eef3ff;
+}
+
+.codebox .cmt {
+  color: #7a7a7a;
+  font-style: italic;
+}
+
+/* ---------- Sidebar / layout table feel ---------- */
+
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cols .main {
+  flex: 2 1 460px;
+}
+
+.cols .side {
+  flex: 1 1 220px;
+}
+
+.side .panel .body {
+  padding: 0 12px;
+}
+
+.side ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.update {
+  border-bottom: 1px dotted #8ea7ff;
+  padding: 6px 0;
+}
+
+.update .date {
+  display: block;
+  font-size: 11px;
+  color: #b34700;
+  font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+
+#footer {
+  text-align: center;
+  color: #cdd8ff;
+  font-size: 11px;
+  padding: 14px 0 0;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+#footer a {
+  color: #ffe680;
+}
+
+#footer .badges {
+  margin: 8px 0 4px;
+}
+
+#footer .badge {
+  display: inline-block;
+  margin: 2px 3px;
+  padding: 2px 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  color: #000000;
+  background: #c0c0c0;
+  border: 1px outset #ffffff;
+}
+
+.breadcrumb {
+  margin: 14px 0 0;
+  font-size: 11px;
+  color: #cdd8ff;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.breadcrumb a {
+  color: #ffe680;
+}
+
+hr.retro {
+  height: 4px;
+  border: 0;
+  margin: 14px 0;
+  background: repeating-linear-gradient(
+    to right,
+    #2456d6 0px, #2456d6 8px,
+    #ffffff 8px, #ffffff 16px,
+    #ffcc00 16px, #ffcc00 24px
+  );
+}

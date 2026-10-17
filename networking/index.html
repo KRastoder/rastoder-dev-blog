@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kenan Rastoder's network programming notes - Beej's Guide, sockets, TCP/UDP, OSI model.">
+  <title>Networking :: Kenan Rastoder</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header id="masthead">
+    <a class="brand" href="/">
+      <h1>Kenan Rastoder</h1>
+      <p class="tagline">~ my little corner of the World Wide Web ~</p>
+    </a>
+    <nav id="nav">
+      <a href="/">Home</a>
+      <a class="active" href="/networking/">Networking</a>
+    </nav>
+  </header>
+
+  <div class="marquee">
+    <span>&#9733; Networking Notes &#9733; Learning sockets, TCP/IP and the OSI model from the ground up &#9733; Guided by Beej's Guide to Network Programming &#9733;</span>
+  </div>
+
+  <div class="wrap">
+
+    <p class="breadcrumb"><a href="/">Home</a> &raquo; Networking</p>
+
+    <div class="panel">
+      <p class="ptitle">&#9733; Network Programming</p>
+      <div class="body">
+        <p>
+          Welcome to my networking notes! I'm teaching myself how programs talk to each other
+          over a network &mdash; from raw sockets all the way up the stack. Think of this as my
+          public learning journal: every entry is what I studied that day, written in my own words.
+        </p>
+        <p>
+          The plan is simple. Read, code, break stuff, write it down. Most of what you'll see here
+          follows <a href="https://beej.us/guide/bgnet/" target="_blank" rel="noopener">Beej's Guide to Network Programming</a>,
+          with my own notes and the C code I compile along the way.
+        </p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <p class="ptitle">&#9998; The Journal</p>
+      <div class="body">
+
+        <div class="update">
+          <span class="date">Day One</span>
+          <strong><a href="/networking/dayone/">What is a Socket? (Beej's Guide, Ch. 2 &amp; 3)</a></strong>
+          <p>
+            Sockets, file descriptors, stream vs datagram sockets, TCP vs UDP,
+            encapsulation, the 7-layer OSI model, and my very first socket program.
+          </p>
+        </div>
+
+        <div class="update">
+          <span class="date">Day Two</span>
+          <strong>Coming soon&hellip;</strong>
+          <p>
+            More socket calls, error handling and building a real client/server pair.
+            <span class="blink">Under construction!</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel">
+      <p class="ptitle">&#9873; Cheat Sheet</p>
+      <div class="body">
+        <h3>Handy calls so far</h3>
+        <ul>
+          <li><code>socket()</code> &mdash; create a socket, get its file descriptor</li>
+          <li><code>bind()</code> &mdash; attach the socket to a port on a local address</li>
+          <li><code>send()</code> / <code>recv()</code> &mdash; push and pull data</li>
+        </ul>
+        <h3>Two socket families to remember</h3>
+        <ul>
+          <li><strong>SOCK_STREAM</strong> &mdash; reliable, ordered, connection-based (TCP)</li>
+          <li><strong>SOCK_DGRAM</strong> &mdash; connectionless, may drop or reorder (UDP)</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <hr class="retro">
+      <div class="badges">
+        <span class="badge">1024 x 768</span>
+        <span class="badge">Made with Notepad</span>
+        <span class="badge">Valid HTML</span>
+        <span class="badge">Powered by GitHub Pages</span>
+      </div>
+      <p>&copy; 2026 Kenan Rastoder &bull; Open source under the <a href="/LICENSE" target="_blank" rel="noopener">MIT License</a></p>
+      <p>This page is a loving tribute to the Web 2.0 era. No JavaScript was harmed.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
